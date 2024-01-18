@@ -56,7 +56,7 @@ const Main = () => {
   };
 
   const fecthData = () => {
-    fetch("http://localhost:5173/api/gamesData.json")
+    fetch("/api/gamesData.json")
       .then((res) => res.json())
       .then((data) => {
         setGames(data);
